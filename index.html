@@ -3,11 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>TOP - Signup Form</title>
 </head>
 <body>
-    
+    <main>
+        <section class="form-container">
+            <h1 class="form-header">Sign Up</h1>
+            <form action="post" autocomplete="off" spellcheck="false">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="user-email" required>
+
+                <label for="user-password">Password</label>
+                <input type="password" id="user-password" name="user-password" required>
+
+                <label for="confirm-user-password">Confirm Password</label>
+                <input type="password" id="confirm-user-password" name="confirm-user-password" required>
+
+                <p>By signing up, you are agreeing to our <span class="highlight"><a href="#">Terms & Conditions</a></span>
+                and our <span class="highlight"><a href="#">Privacy Policy</a></span></p>
+
+                <input type="submit" value="Continue" id="submit-btn">
+
+                <p class="center">Already have an account? <span class="highlight"><a href="#">Login</a></span></p>
+            </form>
+        </section>
+        <section class="media-container">
+            <img src="./photos/vecteezy_illustrations-with-people-working-in-the-office-making-a_3695481.jpg" alt="vector image">
+            <a href="https://www.vecteezy.com/free-vector/cartoon">Cartoon Vectors by Vecteezy</a>
+        </section>    
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,14 +1,120 @@
 html, body {
     box-sizing: border-box;
-    background-image: url(./photos/blurry-gradient-haikei.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
+    background-image: url(./photos/blurry-gradient-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    font-family: Mooli, sans-serif;
+
+    --main-bg: #f3dad9;
+    --main-border: #e6aca2;
+    --highlight-color: #3561a0;
+    --font-color: #3d3d48;
+    --label-color: #5c5c6f;
+    --valid: #24c7a4;
+    --invalid: #923d5d;
+}
+
+main {
+    background-color: var(--main-bg);
+    border: 3px solid var(--main-border);
+    border-radius: 2rem;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.media-container > a {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--font-color);
+}
+
+label {
+    color: var(--label-color);
+}
+
+input, p {
+    margin-bottom: .75rem;
+    width: 300px;
+    font-size: .75rem;
+    color: var(--font-color);
+}
+
+input:valid {
+
+}
+
+input:invalid {
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+
+.center {
+    text-align: center;
+}
+
+.highlight {
+    color: var(--highlight-color);
+}
+
+#submit-btn {
+    background-color: var(--highlight-color);
+    color: white;
+    padding: .75rem;
+    border-radius: .5rem;
+    border-style: none;
+}
+
+#submit-btn:hover {
+    background-color: #5a7db1;
+}
+
+#submit-btn:active {
+    background-color: #1f538e;
 }
