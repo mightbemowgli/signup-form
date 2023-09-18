@@ -127,3 +127,20 @@ a {
 #submit-btn:active {
     background-color: #1f538e;
 }
+
+@media (max-width: 850px) {
+    main {
+        flex-direction: column;
+        height: 100%;
+        border-radius: .75rem;
+    }
+
+    .media-container {
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
