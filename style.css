@@ -1,0 +1,14 @@
+html, body {
+    box-sizing: border-box;
+    background-image: url(./photos/blurry-gradient-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+
+}
